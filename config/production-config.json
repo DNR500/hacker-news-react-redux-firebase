@@ -1,0 +1,9 @@
+{
+  "env": "production",
+  "url": {
+    "just-giving": {
+      "base": "https://api.justgiving.com"
+    }
+  },
+  "appId":"XX id here XX"
+}

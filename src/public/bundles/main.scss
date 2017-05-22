@@ -1,0 +1,73 @@
+// Core variables and mixins
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body{
+  color: #414953;
+  font-family: 'Lato', sans-serif;
+}
+
+.donations-pane--loading-message {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.donations--header{
+  display: block;
+  text-align: center;
+  &--logo {
+    margin: 0 auto;
+    display: block;
+    height: 80px;
+  }
+  &--link, &--link:link, &--link:visited, &--link:hover, &--link:active {
+    color:#006543;
+    font-weight: 700;
+  }
+}
+
+.donations--list--item {
+  min-height: 75px;
+  margin: 20px 10px;
+  position: relative;
+  &--img {
+    position: absolute;
+    max-width: 80px;
+    min-width: 75px;
+  }
+  &--donor-name, &--donor-message, &--donation-details {
+    font-weight: 700;
+    color: #414953;
+    margin-left: 85px;
+  }
+  &--donor-name {
+    margin-bottom: 3px;
+  }
+  &--donation-details {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+  }
+  &--donor-message {
+    font-weight: 300;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .donations--header{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--logo {
+      display: inline-block;
+      margin: 0;
+    }
+    &--link, &--link:link, &--link:visited, &--link:hover, &--link:active {
+      margin-right: 5px;
+    }
+  }
+}
