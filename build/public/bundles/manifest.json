@@ -1,0 +1,14 @@
+{
+  "../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg": "../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+  "../assets/styles/oval.svg": "../assets/styles/oval.svg",
+  "../fonts/glyphicons-halflings-regular.eot": "../fonts/glyphicons-halflings-regular.eot",
+  "../fonts/glyphicons-halflings-regular.svg": "../fonts/glyphicons-halflings-regular.svg",
+  "../fonts/glyphicons-halflings-regular.ttf": "../fonts/glyphicons-halflings-regular.ttf",
+  "../fonts/glyphicons-halflings-regular.woff": "../fonts/glyphicons-halflings-regular.woff",
+  "../fonts/glyphicons-halflings-regular.woff2": "../fonts/glyphicons-halflings-regular.woff2",
+  "main.css": "main.bundle.8000446541a7b641478c.css",
+  "main.css.map": "main.bundle.8000446541a7b641478c.css.map",
+  "main.js": "main.bundle.8000446541a7b641478c.js",
+  "manifest.js": "manifest.bundle.8000446541a7b641478c.js",
+  "vendor.js": "vendor.bundle.8000446541a7b641478c.js"
+}
