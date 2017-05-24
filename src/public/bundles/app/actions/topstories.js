@@ -19,13 +19,17 @@ const requestUserInfo = (stories) => {
       .child(`user/${story.by}`)
       .once('value')
       .then(snap => snap.val()));
-  return Promise.all(userRequests).then(users => ({ users, stories }));
+  return Promise.all(userRequests).then((users) => {
+    database.goOffline();
+    return { users, stories };
+  });
 };
 
 const formatData = ({ users, stories }) =>
   stories.map((story, i) => {
-    const { title, url, time, score } = story;
+    const { id, title, url, time, score } = story;
     return {
+      id,
       title,
       url,
       time,
