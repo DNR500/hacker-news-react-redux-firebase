@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/DNR500/hacker-news-react-redux-firebase"
   },
   "engineStrict": true,
   "engines": {
