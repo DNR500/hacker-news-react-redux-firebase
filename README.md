@@ -11,7 +11,8 @@ A production build is included so that you should be able to see a working page.
 To use the node service to statically serve this app do the following in the root of the project via terminal
 
 ```
-npm i --production
+npm i
+npm run build
 npm run start:node
 ```
 

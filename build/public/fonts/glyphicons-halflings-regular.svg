@@ -1,1 +1,0 @@
-module.exports = __webpack_public_path__ + "../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg";
