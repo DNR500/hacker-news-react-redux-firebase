@@ -57,3 +57,5 @@ NODE_ENV=production npm run build
 NODE_ENV=production npm run start:node
 
 ```
+
+Note: there are only curently a small number of tests for this project. see src > node > config
