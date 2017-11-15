@@ -41,30 +41,23 @@ const formatData = ({ users, stories }) =>
 
 const orderByScore = stories => stories.sort((a, b) => a.score - b.score);
 
-function getTopStoriesRequestedAction() {
-  return {
-    type: ActionTypes.GetTopStoriesRequested,
-  };
-}
+const getTopStoriesRequestedAction = () => ({
+  type: ActionTypes.GetTopStoriesRequested,
+});
 
-function getTopStoriesRejectedAction(error) {
-  return {
-    type: ActionTypes.GetTopStoriesRejected,
-    error,
-  };
-}
+const getTopStoriesRejectedAction = error => ({
+  type: ActionTypes.GetTopStoriesRejected,
+  error,
+});
 
-function getTopStoriesFulfilledAction(topstories) {
-  return {
-    type: ActionTypes.GetTopStoriesFulfilled,
-    topstories,
-  };
-}
+const getTopStoriesFulfilledAction = topstories => ({
+  type: ActionTypes.GetTopStoriesFulfilled,
+  topstories,
+});
 
-export default function getTopstories() {
-  return (dispatch) => {
-    dispatch(getTopStoriesRequestedAction());
-    return requestTopstories()
+const getTopstories = () => (dispatch) => {
+  dispatch(getTopStoriesRequestedAction());
+  return requestTopstories()
       .then(select10StoriesAtRandom)
       .then(requestStoryInfo)
       .then(requestUserInfo)
@@ -74,5 +67,6 @@ export default function getTopstories() {
         dispatch(getTopStoriesFulfilledAction(completeStories)))
       .catch(error =>
         dispatch(getTopStoriesRejectedAction(error)));
-  };
-}
+};
+
+export default getTopstories;
